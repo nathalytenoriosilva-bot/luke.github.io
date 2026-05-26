@@ -3,6 +3,7 @@
 
 <head> <!-- Cabeçalho do site -->
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
     <title>Projeto Base</title> <!-- Título da aba do navegador -->
 
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Conecta o arquivo CSS -->
@@ -10,11 +11,27 @@
 
 <body> <!-- Corpo visível do site -->
 
-    <h1>Olá, mundo!</h1> <!-- Título principal da página -->
+    <div class = "menu-btn" onclick = "toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</li>
+            <li><a href="#">Sobre</li>
+            <li><a href="#">Contatos</li>
+        </ul>
+    </nav>
+    
+    <header class="header">Header</header>
 
-    <button id="botao">Clique aqui</button> <!-- Botão com identificador -->
-
-    <script src="script.js"></script> <!-- Conecta o arquivo JavaScript -->
+    <script> 
+        function toggleMenu(){
+            document.querySelector(".menu-btn).classList.toggle("active");
+            document.querySelector(".menu").classList.toggle("active");
+    </script>
+    
 </body>
 
 </html> <!-- Fim do HTML -->
